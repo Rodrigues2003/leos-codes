@@ -7,8 +7,6 @@ html, body, .grid-container { height: 100%; margin: 0; }
   gap: 1px 1px;
   grid-template-areas: ". . . . ." ". . . . ." ". . . . ." ". . . . .";
 }
-
-/* For presentation only, no need to copy the code below */
 .grid-container * { 
  border: 1px solid red;
  position: relative;

@@ -1,0 +1,39 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        boolean loopControl = false;
+        String palindrome = "";
+        for (int i = 1000000; !loopControl; i--)	{
+            if (isPalindrome(i))	{
+                palindrome = valid3DigitDivisor(i);
+                if ( !(palindrome == "")) {
+                    System.out.println("Der größte Palindrom ist: " + i);
+                    loopControl = true;
+                }
+            }
+        }
+
+    }
+    private static boolean isPalindrome(int number){
+        String dummy = "" + number;
+        int index;
+        for (index = 1; index <= dummy.length()/2 && ( (dummy.charAt((dummy.length()-index)) == dummy.charAt((index-1)) ) ); index++);
+        return (index > dummy.length()/2);
+    }
+    private static String valid3DigitDivisor(int palindrome){
+        int j, loopControl = (int) Math.floor(Math.sqrt(palindrome));
+        String divisor, quotient, result = "";
+        for (j = 0; j <= loopControl; j++)	{
+            if ( (palindrome % (j+2) == 0) )	{
+                divisor = "" + (j+2);
+                quotient = "" + (palindrome/(j+2));
+                if ( (divisor.length() == 3) && (quotient.length() == 3) )	{
+                    result =  divisor + " " + quotient;
+                }
+            }
+        }
+        return result;
+    }
+}

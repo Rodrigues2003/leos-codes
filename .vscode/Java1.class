@@ -5,7 +5,7 @@ public class Main {
 
         names[0] = "lukas";
         names[1] = "leo";
-        names[2] = "theo";
+        names[2] = "theoo";
         names[3] = "Paul";
 
         for (int a =0; a<names.length; a++) {

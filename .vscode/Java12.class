@@ -1,0 +1,33 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+    String name;
+    byte alter;
+    short groesse;
+    int einkommen;
+    double gewicht;
+    String cm;
+    cm  = "cm";
+    String Jahre;
+    Jahre = "Jahre";
+    String Euro;
+    Euro= "Euro";
+    String kg;
+    kg= "kg";
+    String geschlecht;
+    alter = 17;
+    name= "Leo";
+    groesse= 182;
+    einkommen= 590;
+    gewicht = 78.5;
+    geschlecht="männlich";
+    System.out.println(name);
+    System.out.println(alter+Jahre);
+    System.out.println(groesse+cm);
+    System.out.println(einkommen+Euro);
+    System.out.println(gewicht+kg);
+    System.out.println(geschlecht);
+    }
+}

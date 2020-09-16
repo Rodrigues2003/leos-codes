@@ -1,0 +1,14 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        char Jahre = 2020;
+	switch(Jahre) {
+        case 2019: System.out.println("Wir sind im Jahr 2019"); break;
+        case 2020: System.out.println("Wir sind im Jahr 2020"); break;
+        case 2021: System.out.println("Wir sind im Jahr 2021"); break;
+        default: System.out.println("Number hat einen anderen Wert....");
+    }
+    }
+}

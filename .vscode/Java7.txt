@@ -1,0 +1,39 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+         class Problem3
+        {
+            public boolean isPrime(long n)
+            {
+                if ( n % 2 == 0 )
+                    return false;
+
+                long half = (n/2) % 2 == 0 ? (n/2)-1 : n/2;
+                for ( int i = 3; i < half; i += 2 )
+                {
+                    if ( n % i == 0 )
+                        return false;
+                }
+
+                return true;
+            }
+        }
+        {
+            Problem3 p = new Problem3();
+
+            long t = 600851475143L;
+            long a = 2;
+            while (1==1)
+            {
+                long tmp = 600851475143L / a;
+                if ( t % tmp == 0 &&  p.isPrime(tmp) )
+                {
+                    System.out.println("= " + tmp); break;
+                }
+                a++;
+            }
+        }
+    }
+}

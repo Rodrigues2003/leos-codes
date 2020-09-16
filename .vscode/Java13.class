@@ -1,0 +1,23 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	int swag = 104849240;
+	int yolo = 306373;
+	int somo = 84828738;
+	int ade = 444;
+	int lol = 42;
+		int ergebnis;
+		int summe;
+		int ado;
+		int lel;
+	ergebnis=yolo+swag;
+	summe = ergebnis - somo;
+	ado = summe/ade;
+	lel= lol*ado;
+
+
+            System.out.println(lel+lol+ado-ade);
+    }
+}
